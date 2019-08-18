@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>DeadGame</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.min.css">
+	<link rel="icon" type="image/png" href="avatar.png">
+	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css"/>
+
+</head>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+.nav {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 80px;
+  margin-top: -40px;
+  background: #000;
+  transform: translateZ(0);
+}
+.nav:hover .link {
+  width: 5%;
+}
+.nav .link {
+  position: relative;
+  float: left;
+  width: 33%;
+  height: 100%;
+  color: #aaa;
+  border-right: 1px solid #ddd;
+  transition: .5s width;
+  overflow: hidden;
+  cursor: pointer;
+}
+.nav .link:last-child {
+  border-right: 0;
+}
+.nav .link:hover {
+  width: 80%;
+  color: #555;
+}
+.nav .link .small {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  line-height: 78px;
+  text-align: center;
+  font-family: fontawesome;
+  font-size: 24px;
+}
+.nav .link .full {
+  position: absolute;
+  top: 22px;
+  left: 100px;
+  text-transform: uppercase;
+}
+.nav .link .full .f1, .nav .link .full .f2 {
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.f5 {
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #2E2E2E;
+}
+.nav .link .full .f2 {
+  margin-top: 8px;
+  font-size: 12px;
+}
+.nav .link .prev {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  font-family: fontawesome;
+  font-size: 12px;
+  line-height: 78px;
+  transition: 1s opacity;
+  opacity: 0;
+}
+.nav .link:hover .prev {
+  opacity: 0;
+}
+.nav:hover .prev {
+  opacity: 1;
+}
+</style>
+<body class="wrap">
+<header class="page-head page-head--no-scroll-listen">
+	<div class="page-progress">
+		<div class="page-progress__item--index"></div>
+	</div>
+	<h1 class="page-head__logo">
+		<a href="" data-glitch-text="сессия" class="page-head__link--glitch" style="color:#BDBDBD;">เซสชั่น</a>
+	</h1>
+	<p class="call-to-action">
+		<a class="call-to-action__link" title="Contact" href="">Contact us</a>
+	</p>
+	<ul class="page-head__list">
+		<li class="page-head__list-item">
+			<a class="page-head__link page-head__link--glitch"data-glitch-text="Whole catalog of games" href="">Whole catalog of games</a>
+		</li>
+		<li class="page-head__list-item">
+			<a class="page-head__link page-head__link--glitch"data-glitch-text="About" href="">About</a>
+		</li>
+		<li class="page-head__list-item">
+			<a class="page-head__link page-head__link--glitch" data-glitch-text="Game releases" href="">Game releases</a>
+		</li>
+		<li class="page-head__list-item">
+			<a class="page-head__link page-head__link--glitch"data-glitch-text="Events" href="">Events</a>
+		</li>
+	</ul>
+</header>
+<main class="scroll-jacker">
+	<div class="scroll-jacker__cassette scroll-jacker__cassette--active hero hero--page-home hero--video inuit-box inuit-box--flush">
+		<h2 class="hero__message hero__message--bigger hero__message--center hero__message--desktop">
+			DarkFace
+		</h2>
+		<video class="hero__video hero__video--in-cassette" loop muted="" autoplay="" width="100%">
+			<source src="video/homepage.mp4" type="video/mp4">
+		</video>
+		<button type="button" class="hero__chevron-south inuit-btn"></button>
+	</div>
+	<div class="scroll-jacker__cassette scroll-jacker__cassette--active hero hero--home-about inuit-box inuit-box--flush">
+		<h3 class="hero__message hero__message--details">
+				Detroit: Become Human<br>
+			</h3>
+		<div class="hero__side-box">
+			<p class="hero__message hero__message--smaller">
+				В недалёком будущем, в 2038 году, на Земле полным ходом идёт производство андроидов — роботов, созданных компанией «Киберлайф» для удовлетворения различных человеческих потребностей. Основателем компании и создателем андроидов является Элайджа Камски.
+			</p>
+			<p class="call-to-action hero__message">
+				<a class="call-to-action__link call-to-action__link--reverse" title="Find Out More" href="">
+					Ключ от игры в Steam
+				</a>
+			</p>
+		</div>
+		<button type="button" class="hero__chevron-south inuit-btn"></button>
+	</div>
+	<div class="scroll-jacker__cassette scroll-jacker__cassette--active hero hero--work-wine-and-chill inuit-box inuit-box--flush">
+		<div class="hero__side-box">
+			<p class="hero__message hero__message--smaller">
+				  Главный герой, Вито Скалетта(полное имя — Витторио Антонио Скалетта), в детстве переехал вместе со своей семьёй из Сицилии в США. Будучи мальчишкой, Вито думал, что в Америке все его мечты станут реальностью, однако на деле всё оказалось иначе.
+			</p>
+			<p class="call-to-action hero__message">
+				<a class="call-to-action__link" title="View Case Study" href="">
+					Ключ от игры в Steam
+				</a>
+			</p>
+		</div>
+		<button type="button" class="hero__chevron-south inuit-btn"></button>
+	</div>
+	<div class="scroll-jacker__cassette scroll-jacker__cassette--active hero hero--employer-branding inuit-box inuit-box--flush">
+		<div class="hero__side-box">
+			<h2 class="hero__message hero__message--in-between">The witcher 3: wild hunt</h2>
+			<p class="hero__message hero__message--smaller" >За полторы тысячи лет мир ведьмака пережил катаклизм, после него в мире появилось множество странных и опасных чудовищ, на которых охотятся Геральт из Ривии и другие ведьмаки.</p>
+			<p class="call-to-action hero__message">
+				<a class="call-to-action__link" title="Employer Branding" href="">Ключ от игры в Steam</a>
+			</p>
+		</div>
+		<button type="button" class="hero__chevron-south inuit-btn"></button>
+	</div>
+	<div class="scroll-jacker__cassette scroll-jacker__cassette--active hero hero--linkedin-case-study inuit-box inuit-box--flush">
+		<div class="hero__side-box">
+			<h2 class="hero__message hero__message--in-between">The last of us: remastered</h2>
+			<p class="hero__message hero__message--smaller">
+				Действие игры происходит в постапокалиптическом будущем на территории бывших U.S.A. спустя двадцать лет после глобальной пандемии, вызванной опасно мутировавшим грибком кордицепс.
+			</p>
+			<p class="call-to-action hero__message">
+				<a class="call-to-action__link" title="View Case Study" href="">
+					Ключ от игры в Steam
+				</a>
+			</p>
+		</div>
+		<button type="button" class="hero__chevron-south inuit-btn"></button>
+	</div>
+	<div class="scroll-jacker__cassette pp-scrollable">
+		<ul class="gallery social-feed-list">
+			<li class="gallery__item">
+				<a class="gallery__link" href="">
+					<span class="gallery__attention-text">Doom 3</span>
+					<img src="img/doom3.jpg" alt="Doom 3" class="gallery__img">
+				</a>
+			</li>
+			<li class="gallery__item">
+				<a  target="_blank" class="gallery__link" href="">
+					<span class="gallery__attention-text">Battlefield 1 </span>
+					<img src="img/battlefield1.jpg" alt="Battlefield 1 " class="gallery__img">
+				</a>
+			</li>
+			<li class="gallery__item">
+				<a class="gallery__link" href=""vvv>
+					<span class="gallery__attention-text">Grand Theft Auto (GTA) 5</span>
+					<img src="img/GTA5.jpg" alt="Grand Theft Auto (GTA) 5" class="gallery__img">
+				</a>
+			</li>
+			
+			<li class="gallery__item">
+				<a target="_blank" class="gallery__link" href="">
+					<span class="gallery__attention-text">The Witcher 3: Wild Hunt</span>
+					<img src="img/witcher.jpg" alt="The Witcher 3: Wild Hunt" class="gallery__img">
+				</a>
+			</li>
+			<li class="gallery__item">
+				<a target="_blank" class="gallery__link" href="">
+					<span class="gallery__attention-text">Just Cause 3</span>
+					<img src="img/JustCause3.jpg" alt="Just Cause 3" class="gallery__img">
+				</a>
+			</li>
+			<li class="gallery__item">
+				<a target="_blank" class="gallery__link" href="">
+					<span class="gallery__attention-text">Mass Effect: Andromeda</span>
+					<img src="img/MassEffectAndromeda.jpg" alt="Mass Effect: Andromeda" class="gallery__img">
+				</a>
+			</li>
+			<li class="gallery__item">
+				<a target="_blank" class="gallery__link" href="">
+					<span class="gallery__attention-text">Watch Dogs 2</span>
+					<img src="img/WatchDogs2.jpg" alt="Watch Dogs 2" class="gallery__img">
+				</a>
+			</li>
+			<li class="gallery__item">
+				<a target="_blank" class="gallery__link" href="">
+					<span class="gallery__attention-text">Assassin's Creed Syndicate</span>
+					<img src="img/Assassin'sCreedSyndicate.jpg" alt="Assassin's Creed Syndicate" class="gallery__img">
+				</a>
+			</li>
+			<li class="gallery__item">
+				<a target="_blank" class="gallery__link" href="">
+					<span class="gallery__attention-text">Deus Ex: Mankind Divided</span>
+					<img src="img/DeusExMankindDivided.jpg" alt="Deus Ex: Mankind Divided" class="gallery__img">
+				</a>
+			</li>
+			<li class="gallery__item">
+				<a target="_blank" class="gallery__link" href="">
+					<span class="gallery__attention-text">Ark: Survival Evolved</span>
+					<img src="img/ArkSurvivalEvolved.jpg" alt="Ark: Survival Evolved" class="gallery__img">
+				</a>
+			</li>
+		</ul>
+		<blockquote class="quote quote--small">
+			<p class="quote__text">&quot;Top 10 games in all years, according to most people.&quot;</p>
+			<small class="quote__author">2018 year</small>
+		</blockquote>
+
+		<footer class="page-footer" data-tag-line="DarkFace">
+    <div class='nav'>
+      <div class='link'>
+        <div class='prev'>&#x25b7;</div>
+        <div class='small'>&#x25b7;</div>
+        <div class='full'>
+          <div class='f1'>Main site</div>
+          <div class='f2'>
+			<a class="f5" href="">&copy;Darkface Terms of Use.</a>
+          </div>
+        </div>
+      </div>
+      <div class='link'>
+        <div class='prev'>&#x2709;</div>
+        <div class='small'>&#x2709;</div>
+        <div class='full'>
+          <div class='f1'>Find us in</div>
+          <div class='f2'>
+			<a rel="nofollow" target="_blank" href="" class="f5" href="/">Facebook.</a>
+			<a rel="nofollow" target="_blank" href="" class="f5">Twitter.</a>
+			<a rel="nofollow" target="_blank" href="" class="f5">Instagram.</a>
+			<a rel="nofollow" target="_blank" href="" class="f5">Dribbble.</a>
+          </div>
+        </div>
+      </div>
+      <div class='link'>
+        <div class='prev'>&#x2706;</div>
+        <div class='small'>&#x2706;</div>
+        <div class='full'>
+          <div class='f1'>Phone</div>
+          <div class='f2'>
+          	<a class="f5" href="">X-000-000-0000</a>
+		</div>
+        </div>
+      </div>
+    </div>
+
+		</footer>
+	  </div>
+    </main>
+    <script src="jquery.min.js"></script><!-- анимация -->
+    <script src="jquery.pagepiling.min.js"></script><!-- модуль укладки прокручиваемых окон -->
+    <script async src="scroll-jacker.js"></script><!-- прокрутка -->
+  </body>
+</html>
